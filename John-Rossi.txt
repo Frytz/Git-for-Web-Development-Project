@@ -90,7 +90,7 @@ codepen fork: https://codepen.io/Frytz/pen/vYEaLaM?editors=1100
         git chechout -b firstname-lastname (switches to new branch)
         work on the project/projects
         git add . (adds changes to the project/s)
-        git commit -m (prepares the changes for push with a message attached)
+        git commit -m "text"(prepares the changes for push with a message attached)
         git push -u origin branch-name (pushes the repo through to github with your branch name)
         open github, select the branch:master drop down menu, select your branch name, change base repo to you forked repo, add your tl as a reviewer and submit a pull request.
 
@@ -98,8 +98,17 @@ codepen fork: https://codepen.io/Frytz/pen/vYEaLaM?editors=1100
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-        
+        inline elements don't force a new line to break, where-as block levels will.
     2. What happens when an element is positioned absolutely? 
+        An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        width: auto;
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+       block-level <div>, <header>, <footer>, inline-level <span>, <a>, <br>, inline-block <img>
     5. In your own words, explain the box model. What is the fix for the box model? 
+        The box model is used in css for the design and layout of a page and consists of : content (texts and images), padding (goes around the content-transparent), border (goes around the border and content), margin (the outer most edge-transparent).
+        You fix the box model by adding properties to it attributes. for example 
+        .class {
+            padding: 10px;
+
+        } will add a space of 10 pixels around the content of the class .class
